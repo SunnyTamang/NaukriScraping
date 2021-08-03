@@ -49,28 +49,9 @@ def index():
             soup = bs(driver.page_source,'html5lib')
 
             print(soup.prettify())
-            # company_list = soup.find_all("div", { "class": "companyInfo"})
-
-            # driver.close()
-            # for company_names in company_list:
-            #     try:
-                    
-            #         companies = company_names.a.text
-            #         print(companies)
-            #         mydict = {"Company": companies}
-            #         company.append(mydict)
-            #         print(company)
-
-
-            #     except:
-            #         rating = 'No Company'
 
             listOfInfo = soup.find_all("article", { "class": "jobTuple"})
-            # filename = searchString + ".csv"
-            # fw = open(filename, "w")
-            # headers = "Company, Job Title, Experience, Salary, Location \n"
-            # fw.write(headers)
-            # print(listOfInfo)
+            
             driver.close()
             for lists in listOfInfo:
                 try:
