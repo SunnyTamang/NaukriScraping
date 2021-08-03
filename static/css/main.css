@@ -1,0 +1,23 @@
+body{
+    /* margin: 0; */
+    font-family: sans-serif;
+}
+.content {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.submit_btn{
+    margin-top: 10px;
+}
+
+form{
+    margin-left: 700px;
+    margin-right: 700px;
+}
+.model-content{
+    background-color: darkslategray;
+}
+.jumbotron .jumbotron-fluid{
+    text-decoration-color: black;
+}
