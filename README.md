@@ -34,6 +34,10 @@ If no IDE is being used then open terminal and browse to the directory of the pr
 > python app.py
 ```
 
+## Important Note
+
+Please change the time.sleep(5) value in app.py accordingly. It scraps the first 22 records
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 

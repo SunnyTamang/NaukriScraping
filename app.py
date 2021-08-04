@@ -120,7 +120,7 @@ def index():
         # Converting Pandas DataFrame
         # into CSV file
             dataFrame.to_csv("static/"+ searchString + '.csv')
-            return render_template("result.html", details=details[0:(len(details)-1)],searchString=searchString)
+            return render_template("result.html", details=details[0:(len(details))],searchString=searchString)
 
     except Exception as e:
         print(e)
