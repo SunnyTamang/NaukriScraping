@@ -1,5 +1,6 @@
 
 from flask import Flask, render_template, request,jsonify,flash
+from flask.helpers import send_file
 from pandas.core.accessor import CachedAccessor
 from selenium import webdriver
 import time
@@ -120,14 +121,23 @@ def index():
             
         # Converting Pandas DataFrame
         # into CSV file
-            dataFrame.to_csv(searchString + '.csv')
-            return render_template("result.html", details=details[0:(len(details)-1)])
+            dataFrame.to_csv("static/"+ searchString + '.csv')
+            return render_template("result.html", details=details[0:(len(details)-1)],searchString=searchString)
 
     except Exception as e:
         print(e)
         return render_template("error.html")
 
-    
+@app.route("/downloads")    
+@cross_origin
+def download():
+    # print(request.form['content'])
+    # return send_file(request.form['content'] + '.csv', as_attachment=True )
+    # return render_template('result.html')
+    try:
+        print(request.form['content'])
+    except Exception as e:
+        pass
 
 
 if __name__ == "__main__":
