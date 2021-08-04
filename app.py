@@ -1,13 +1,11 @@
 
 from flask import Flask, render_template, request,jsonify,flash
-from flask.helpers import send_file
-from pandas.core.accessor import CachedAccessor
 from selenium import webdriver
 import time
 from flask_cors import CORS,cross_origin
-import requests
+# import requests
 from bs4 import BeautifulSoup as bs
-from urllib.request import urlopen as uReq
+# from urllib.request import urlopen as uReq
 import pandas as pd
 
 app=Flask(__name__)
