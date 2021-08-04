@@ -1,27 +1,12 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<title>Template</title>
+<title>Scrap It!</title>
 {% endblock %}
 
 
 {% block body %}
 
-<!-- <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html">Tempo</a></h1>
-    </div>
-</header>
-
-<section id="hero">
-    <div class="hero-container">
-        <h3>Welcome to <strong>Tempo</strong></h3>
-        <h1>We're Creative Agency</h1>
-        <h2>We are team of talented designers making websites with Bootstrap</h2>
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
-    </div>
-</section> -->
 
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
@@ -29,10 +14,7 @@
     <main class="px-3">
       <h1>Naukri Scrapper</h1>
       <p class="lead">Provide the job category</p>
-      <!-- <p class="lead">
-        <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-      </p> -->
-
+      
       <form action="/results" method="POST">
         
         <div class="form-floating px-8">
@@ -41,23 +23,12 @@
         </div>
         
         <button class="submit_btn btn btn-lg btn-secondary fw-bold border-white" type="submit">Scrap</button>
-        <!-- <p class="mt-5 mb-3 text-muted">© 2017–2021</p> -->
+        
       </form>
     </main>
   
-    <!-- <footer class="mt-auto text-white-50">
     
-    </footer> -->
   </div>
 
-<!-- <div class="content">
-    <h1 style="text-align: center">Search</h1>
 
-    <div class="form">
-        <form action="/review" method="POST">
-            <input type="text" name="content" id="content">
-            <input type="submit" value="Search">
-        </form>
-    </div>
-</div> -->
 {% endblock %}
